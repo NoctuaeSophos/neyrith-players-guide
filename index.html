@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neyrith: Player's Guide (draft)</title>
+<style>
+  :root {
+    --bg: #14161a;
+    --panel: #1c1f25;
+    --ink: #d9d4c7;
+    --muted: #9a9486;
+    --accent: #b9a15e;
+    --accent-dim: #6f6239;
+    --rule: #2c3038;
+    --note: #232733;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+  header { text-align: center; padding: 2.5rem 0 1.5rem; border-bottom: 1px solid var(--rule); }
+  header h1 { font-size: 2.6rem; letter-spacing: 0.08em; margin: 0; color: var(--accent); font-weight: normal; }
+  header p.sub { color: var(--muted); margin: 0.4rem 0 0; font-style: italic; }
+  .draft { display: inline-block; margin-top: 1rem; padding: 0.2rem 0.7rem; border: 1px solid var(--accent-dim); color: var(--accent); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; }
+  nav { background: var(--panel); border: 1px solid var(--rule); padding: 1rem 1.25rem; margin: 2rem 0; }
+  nav strong { color: var(--accent); font-weight: normal; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.85rem; }
+  nav ol { margin: 0.5rem 0 0; padding-left: 1.3rem; columns: 2; column-gap: 2rem; }
+  nav a { color: var(--ink); text-decoration: none; }
+  nav a:hover { color: var(--accent); }
+  h2 { color: var(--accent); font-weight: normal; letter-spacing: 0.05em; border-bottom: 1px solid var(--rule); padding-bottom: 0.3rem; margin-top: 3rem; }
+  h3 { color: var(--ink); font-weight: normal; font-style: italic; margin-bottom: 0.3rem; margin-top: 1.8rem; }
+  a { color: var(--accent); }
+  .lead { font-size: 1.1rem; font-style: italic; color: #e6e0d2; }
+  .note { background: var(--note); border-left: 3px solid var(--accent-dim); padding: 0.7rem 1rem; margin: 1rem 0; font-size: 0.95rem; }
+  .gm { color: var(--muted); font-size: 0.9rem; font-style: italic; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--rule); }
+  th { color: var(--accent); font-weight: normal; letter-spacing: 0.05em; }
+  ul { padding-left: 1.3rem; }
+  li { margin: 0.25rem 0; }
+  footer { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.85rem; text-align: center; }
+  @media (max-width: 640px) { nav ol { columns: 1; } header h1 { font-size: 2rem; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>NEYRITH</h1>
+  <p class="sub">A Player's Guide to the Silent Kingdom</p>
+  <span class="draft">Draft</span>
+</header>
+
+<nav>
+  <strong>Contents</strong>
+  <ol>
+    <li><a href="#pitch">The Silent Kingdom</a></li>
+    <li><a href="#tone">Tone</a></li>
+    <li><a href="#start">Where You Begin</a></li>
+    <li><a href="#region">The Region</a></li>
+    <li><a href="#powers">Powers of the Mind and Body</a></li>
+    <li><a href="#faith">Faith and the Gods</a></li>
+    <li><a href="#races">Races</a></li>
+    <li><a href="#classes">Classes</a></li>
+    <li><a href="#creation">Character Creation</a></li>
+    <li><a href="#rules">House Rules</a></li>
+    <li><a href="#cosmos">The Planes</a></li>
+  </ol>
+</nav>
+
+<section id="pitch">
+<h2>1. The Silent Kingdom</h2>
+<p class="lead">Behind its high walls, Neyrith was the greatest civilization in the world: the heart of psionics, years ahead of everyone else. Then, one day, every person inside it was gone.</p>
+<p>Neyrith was a human kingdom, closed off behind walls that ringed its whole territory. It traded a little with its neighbors and shared knowledge now and then, but on its own terms, and few outsiders ever saw much of the inside. What they heard of was remarkable: streets lit by glowing crystals, machines that worked without horses or hands, healers who could mend what no one else could.</p>
+<p>Because Neyrith kept so much to itself, it took time for anyone to notice it had gone silent, and longer for word to spread. When people finally went to look, they found the kingdom intact and empty. No bodies, no battle, no plague. Just homes, workshops and roads, and none of the people who had lived there.</p>
+<p>Humans have been rare in the world ever since. Whatever happened to Neyrith took most of them with it.</p>
+<p>At first the borders were a free-for-all, and fortune-seekers wandered in and out. Then a distant power, an elven empire, began marching to claim the kingdom, conquering a whole region on the way. Every other neighbor mobilized to keep it from getting there first. Now blockades ring Neyrith, and getting in means getting past an army.</p>
+<p>You are going in anyway.</p>
+</section>
+
+<section id="tone">
+<h2>2. Tone</h2>
+<p>This campaign is about a fallen place and the mystery of what happened to it. Expect faded grandeur, quiet melancholy, and a story you piece together from what was left behind: rooms, objects, scraps of writing. Some things will be beautiful and some will be dangerous, and the empty kingdom is rarely as empty as it looks.</p>
+<p>Your characters won't be told what happened. They'll have to find out.</p>
+</section>
+
+<section id="start">
+<h2>3. Where You Begin</h2>
+<h3>Gatewater</h3>
+<p>The campaign opens in <strong>Gatewater</strong>, a shanty town that grew up outside one of Neyrith's major gates during the free-for-all. When the half-giant army of Freemarch arrived to lock down the border, it closed the gate but couldn't clear out the town. Today Gatewater is a crowded mix of soldiers, stranded fortune-seekers, relic scavengers, refugees and smugglers.</p>
+<p>Your characters have each, for their own reasons, arranged to meet a contact in a Gatewater tavern: someone who can smuggle them across the border.</p>
+<div class="note">Every character needs a reason to want into Neyrith. Think about what yours is: a person, a fortune, a question, a debt, a calling. Campaign traits tied to these reasons will come in a later version of this guide.</div>
+<h3>Psionics in Freemarch</h3>
+<p>Freemarch doesn't outlaw psionics, but it doesn't trust it. Use your powers too openly and you may be run out of town. People who make a show of that kind of power sometimes go missing, and nobody looks very hard for them. Psionic characters should expect to keep a low profile until they're past the wall.</p>
+</section>
+
+<section id="region">
+<h2>4. The Region</h2>
+
+<h3>Neyrith</h3>
+<p>The silent kingdom: walled, human, psionically advanced, and empty. It is landlocked, with a river that flows out through its walls. Travelers who went in during the free-for-all tell stories of crystal-lit streets and of automatons still going about their work.</p>
+
+<h3>Freemarch</h3>
+<p>The half-giant kingdom where the campaign begins. Long ago, the half-giants served Neyrith. Generations back, Neyrith simply let them go, and the half-giants have spent every generation since wondering why, and waiting for the catch. When half-giants walked into the empty kingdom during the free-for-all and found machines doing the work their ancestors once did, many felt their suspicions confirmed.</p>
+<p>Freemarch is governed by a council, and its government is far steadier and more orderly than outsiders tend to expect. Half-giants named their land and towns in plain words, setting aside the language of their old masters.</p>
+
+<h3>The Elven Empire</h3>
+<p>A distant, expansionist elven empire whose power comes from <em>akasha</em> (see <a href="#powers">Powers</a>). It didn't border Neyrith, so it conquered the dromite region in between to reach it. Its march is the reason the neighbors raised their blockades. The gamla, a people of the empire's lower caste, say the elves first learned akasha from them.</p>
+
+<h3>The Conquered Dromites</h3>
+<p>The dromite hive-cities that stood in the empire's path now live under elven occupation. Dromite refugees and stories of the conquest have reached as far as Gatewater.</p>
+
+<h3>The Ophiduans</h3>
+<p>A psionically gifted ophiduan kingdom near Neyrith, ranked by talent and always looking to expand. The ophiduans are pursuing the opportunity too, with expeditions rather than armies.</p>
+
+<h3>The Gnomish Merchants</h3>
+<p>A gnomish merchant league with trading houses across many lands, neighboring Freemarch. The blockade hurts their business, and they're widely suspected of funding a good deal of what slips through it. They work closely with the maenads to keep their sea trade moving.</p>
+
+<h3>The Maenad Isles</h3>
+<p>Not a kingdom, but the maenads control a system of islands some way off the coast, and their sailors carry much of the region's sea trade.</p>
+
+<h3>The Xeph</h3>
+<p>The xeph have no kingdom of their own. They're freelancers, quick and loyal to their clans, and many of the region's smugglers are xeph.</p>
+
+<h3>The Halfling Church</h3>
+<p>A halfling-led kingdom devoted to the Hearthfather, the greatest faith in the world (see <a href="#faith">Faith</a>). It is the most common source of clerics, though its faithful are found everywhere.</p>
+
+<h3>The Dwarves</h3>
+<p>A dwarven kingdom far from Neyrith. Small groups of dwarves have been seen traveling toward the silent kingdom, saying something is wrong with the Sleeping Goddess and that she must not wake.</p>
+
+<h3>The Scholars</h3>
+<p>A scholarly faction with members in several kingdoms, interested in what Neyrith knew.</p>
+
+<h3>Beyond the Region</h3>
+<p>The world is larger than these lands. Far-off countries, much further than any of the realms above, hold peoples rarely or never seen here.</p>
+</section>
+
+<section id="powers">
+<h2>5. Powers of the Mind and Body</h2>
+<p>There are no wizards, sorcerers or witches in this world. The great powers are these:</p>
+<ul>
+  <li><strong>Psionics:</strong> the power of the mind, the most widespread form of supernatural power in the region. Neyrith was its center and its greatest master.</li>
+  <li><strong>The martial disciplines</strong> (Path of War): fighting traditions passed down in schools, orders and lineages. They're as much a part of the world's cultures as its faiths.</li>
+  <li><strong>Akasha:</strong> veilweaving, the power of the elven empire. Practitioners shape <em>veils</em> of akasha and invest them with essence. It is strongly associated with the empire.</li>
+  <li><strong>Divine magic:</strong> clerics and a few other faithful cast spells in the name of their gods. It's the only Vancian spellcasting in the world.</li>
+</ul>
+</section>
+
+<section id="faith">
+<h2>6. Faith and the Gods</h2>
+<h3>The Hearthfather</h3>
+<p>The Hearthfather is the god of the halfling church and the most widely worshipped god in the world. He covers nearly all of everyday life. His faithful preach hospitality, ask his blessing on travelers for safe journeys, hold oaths sworn in his name sacred, and pray to him for good harvests. His clergy take virtue names when they're ordained.</p>
+<p><strong>Domains:</strong> Community, Travel, Law, Plant, Weather, Protection, Healing (and related subdomains).</p>
+
+<h3>Smaller Faiths</h3>
+<p>Elsewhere, many smaller gods are worshipped, some with organized churches and some with little structure at all.</p>
+
+<h3>Where Clerics' Power Comes From</h3>
+<p>Clerics' power comes from the gods, or so nearly everyone says. A few people suspect it comes from something else, such as the collective belief of the faithful. The halfling church shuns anyone who says so.</p>
+
+<h3>The Sleeping Goddess</h3>
+<p>Almost everyone has heard the name. What it means depends on who you ask:</p>
+<ul>
+  <li>The halfling church treats the Sleeping Goddess as a natural phenomenon, something to understand rather than worship, and calls worshipping her heresy.</li>
+  <li>The dwarves speak of her as something that must not wake.</li>
+  <li>Among other peoples she is a folk saying, a philosophy, an old superstition, or the namesake of a martial discipline.</li>
+</ul>
+</section>
+
+<section id="races">
+<h2>7. Races</h2>
+<p>Paizo's core races are available, along with the Dreamscarred Press races below. Most of the region is made up of core races. The others are distinctive minority peoples.</p>
+<table>
+  <tr><th>Race</th><th>In this region</th></tr>
+  <tr><td>Human</td><td>Rare since Neyrith fell silent. A human draws attention, especially in Freemarch.</td></tr>
+  <tr><td>Elf</td><td>The people of the expansionist empire.</td></tr>
+  <tr><td>Dwarf</td><td>From a distant dwarven kingdom.</td></tr>
+  <tr><td>Halfling</td><td>The people who lead the Hearthfather's church.</td></tr>
+  <tr><td>Gnome</td><td>The merchant league and its trading houses.</td></tr>
+  <tr><td>Half-elf, half-orc</td><td>Found throughout the region, with no kingdom of their own.</td></tr>
+  <tr><td>Half-giant</td><td>The people of Freemarch, once Neyrith's servants.</td></tr>
+  <tr><td>Dromite</td><td>From the hive-cities the elven empire conquered.</td></tr>
+  <tr><td>Ophiduan</td><td>From the ophiduan kingdom near Neyrith.</td></tr>
+  <tr><td>Maenad</td><td>From the maenad isles off the coast.</td></tr>
+  <tr><td>Xeph</td><td>Freelancers with no kingdom; many are smugglers.</td></tr>
+  <tr><td>Duergar</td><td>Part of the dwarven kingdom.</td></tr>
+  <tr><td>Gamla</td><td>A lower caste within the elven empire.</td></tr>
+  <tr><td>Blue</td><td>The region's goblins.</td></tr>
+  <tr><td>Forgeborn</td><td>No homeland of their own.</td></tr>
+  <tr><td>Elan, noral</td><td>Very rare. Talk to the GM.</td></tr>
+  <tr><td>Half-goblin, watcher, kestrel, trixie <span class="gm">(Bloodforge)</span></td><td>Found among the blues, the dwarves, the halflings and the gnomes respectively.</td></tr>
+  <tr><td>Kijin, sthein, woodborn <span class="gm">(Bloodforge)</span></td><td>Uncommon elven-descended peoples.</td></tr>
+</table>
+<p class="gm">Other Paizo and third-party races don't live in this region. They may exist in far-off lands.</p>
+</section>
+
+<section id="classes">
+<h2>8. Classes</h2>
+<h3>Dreamscarred Press classes</h3>
+<p>All Dreamscarred Press base classes are available, with their DSP archetypes:</p>
+<ul>
+  <li><strong>Psionic:</strong> aegis, cryptic, dread, highlord, marksman, psion, psychic warrior, soulknife, tactician, vitalist, voyager, wilder.</li>
+  <li><strong>Path of War:</strong> harbinger, medic, mystic, stalker, warder, warlord, zealot.</li>
+  <li><strong>Akashic:</strong> daevic, guru, vizier, and the rajah (which also uses martial maneuvers).</li>
+</ul>
+
+<h3>Paizo classes</h3>
+<p>Paizo classes are available only in these forms:</p>
+<table>
+  <tr><th>Class</th><th>Allowed as</th></tr>
+  <tr><td>Cleric</td><td>The cleric class.</td></tr>
+  <tr><td>Druid</td><td>Gaean archetype only.</td></tr>
+  <tr><td>Inquisitor</td><td>Warpath Follower or Clan Warden only.</td></tr>
+  <tr><td>Warpriest</td><td>Warpath Follower only.</td></tr>
+  <tr><td>Paladin</td><td>Knight Disciple or Sleeper's Guardian.</td></tr>
+  <tr><td>Ranger</td><td>Ambush Hunter, Pack Leader or Kinslayer.</td></tr>
+  <tr><td>Bard</td><td>Rubato.</td></tr>
+  <tr><td>Alchemist</td><td>Mutator or Polymath.</td></tr>
+  <tr><td>Investigator</td><td>Polymath.</td></tr>
+</table>
+<p class="gm">Every other Paizo class is unavailable. Arcane spellcasting doesn't exist in this world.</p>
+<div class="note">Not yet settled: Dreamscarred Press prestige classes, and the Snake Charmer (magus) and Resonant Song (bard) archetypes. Ask the GM.</div>
+</section>
+
+<section id="creation">
+<h2>9. Character Creation</h2>
+<ul>
+  <li><strong>Starting level:</strong> 1st. You'll reach 2nd level once you're past the wall.</li>
+  <li><strong>Ability scores:</strong> 25-point buy.</li>
+  <li><strong>Starting wealth:</strong> standard for your class.</li>
+  <li><strong>Content:</strong> classes follow the list above. Everything else (feats, traits, equipment, spells and so on) may come from Paizo first-party books or Dreamscarred Press.</li>
+  <li><strong>Not used here:</strong> Spheres of Power and Might, and other third-party publishers.</li>
+  <li><strong>Mythic:</strong> not used, for now.</li>
+</ul>
+</section>
+
+<section id="rules">
+<h2>10. House Rules</h2>
+<p>The group's usual house rules apply where they fit. In short:</p>
+<ul>
+  <li><strong>Hit points:</strong> full Hit Die at 1st level, then the average roll each level after (d6 = 3.5, d8 = 4.5, d10 = 5.5, d12 = 6.5), with halves kept per class and each class's total rounded.</li>
+  <li><strong>Fractional base bonuses</strong> (Pathfinder Unchained) for BAB and saves.</li>
+  <li><strong>Background skills</strong> (Pathfinder Unchained): 2 extra ranks per level for background skills.</li>
+  <li><strong>Hero points</strong> are in use. You may take <em>Anti-Hero</em> instead: no hero points, one bonus feat at 1st level.</li>
+  <li><strong>Feat taxes removed:</strong> Weapon Finesse is gone (light weapons are finesse weapons); Power Attack, Deadly Aim and Combat Expertise are free at BAB +1; weapon feats apply to weapon groups; Dodge includes Mobility; and combat maneuver feats are consolidated.</li>
+  <li><strong>Alignment steps</strong> move along one axis only, never diagonally.</li>
+</ul>
+<p class="gm">Ask the GM for the full house rules document.</p>
+</section>
+
+<section id="cosmos">
+<h2>11. The Planes</h2>
+<p>Beyond the Material Plane lie the <strong>Astral</strong> and <strong>Ethereal</strong> planes, the <strong>Positive and Negative Energy Planes</strong>, and the four <strong>elemental planes</strong> of air, earth, fire and water. There are no outer planes: no heavens or hells. Celestial and fiendish beings exist, drawing on positive and negative energy. Fey are native to the Material Plane.</p>
+</section>
+
+<footer>
+  Neyrith Player's Guide, draft. Pathfinder Roleplaying Game first edition, with Dreamscarred Press content.
+</footer>
+
+</div>
+</body>
+</html>
