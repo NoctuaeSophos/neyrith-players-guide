@@ -1,0 +1,8 @@
+# Neyrith Player's Guide
+
+> Player's guide for Neyrith, a Pathfinder 1st Edition campaign built on Dreamscarred Press content (Psionics, Path of War, Akashic Mysteries). AI assistants helping a player design a character should start with agents.html.
+
+- [For AI assistants](https://noctuaesophos.github.io/neyrith-players-guide/agents.html): rules summary, allowed content, common mistakes
+- [Player's guide](https://noctuaesophos.github.io/neyrith-players-guide/index.html): setting, races, classes, house rules, third-party options, GM rulings
+- [Feats](https://noctuaesophos.github.io/neyrith-players-guide/feats.html): Elephant in the Room v3.0 feat rules, which replace the Core Rulebook feats
+- [Changelog](https://noctuaesophos.github.io/neyrith-players-guide/changelog.html): what changed between versions

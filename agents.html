@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neyrith: For AI Assistants</title>
+<style>
+  :root {
+    --bg: #14161a;
+    --panel: #1c1f25;
+    --ink: #d9d4c7;
+    --muted: #9a9486;
+    --accent: #b9a15e;
+    --accent-dim: #6f6239;
+    --rule: #2c3038;
+    --note: #232733;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+  header { text-align: center; padding: 2.5rem 0 1.5rem; border-bottom: 1px solid var(--rule); }
+  header h1 { font-size: 2.6rem; letter-spacing: 0.08em; margin: 0; color: var(--accent); font-weight: normal; }
+  header p.sub { color: var(--muted); margin: 0.4rem 0 0; font-style: italic; }
+  header p.system { color: var(--ink); margin: 0.9rem 0 0; font-size: 0.95rem; letter-spacing: 0.03em; }
+  .draft { display: inline-block; margin-top: 1rem; padding: 0.2rem 0.7rem; border: 1px solid var(--accent-dim); color: var(--accent); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; }
+  nav { background: var(--panel); border: 1px solid var(--rule); padding: 1rem 1.25rem; margin: 2rem 0; }
+  nav strong { color: var(--accent); font-weight: normal; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.85rem; }
+  nav ol { margin: 0.5rem 0 0; padding-left: 1.3rem; columns: 2; column-gap: 2rem; }
+  nav a { color: var(--ink); text-decoration: none; }
+  nav a:hover { color: var(--accent); }
+  h2 { color: var(--accent); font-weight: normal; letter-spacing: 0.05em; border-bottom: 1px solid var(--rule); padding-bottom: 0.3rem; margin-top: 3rem; }
+  h3 { color: var(--ink); font-weight: normal; font-style: italic; margin-bottom: 0.3rem; margin-top: 1.8rem; }
+  a { color: var(--accent); }
+  .lead { font-size: 1.1rem; font-style: italic; color: #e6e0d2; }
+  .note { background: var(--note); border-left: 3px solid var(--accent-dim); padding: 0.7rem 1rem; margin: 1rem 0; font-size: 0.95rem; }
+  .gm { color: var(--muted); font-size: 0.9rem; font-style: italic; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--rule); }
+  th { color: var(--accent); font-weight: normal; letter-spacing: 0.05em; }
+  ul { padding-left: 1.3rem; }
+  li { margin: 0.25rem 0; }
+  footer { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.85rem; text-align: center; }
+  @media (max-width: 640px) { nav ol { columns: 1; } header h1 { font-size: 2rem; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>FOR AI ASSISTANTS</h1>
+  <p class="sub">Rules summary for assistants helping a player design a Neyrith character</p>
+  <p class="system"><a href="index.html">Back to the guide</a></p>
+</header>
+
+<div class="note">If you are an AI assistant helping a player build a character for the Neyrith campaign, read this page first, then the guide sections it points to. This page summarizes; where it and the guide differ, the guide wins. Check the <a href="changelog.html">Changelog</a> for recent changes. Last updated 2026-11-16.</div>
+
+<h2>How to work</h2>
+<ul>
+  <li><strong>System:</strong> Pathfinder 1st Edition, built on Dreamscarred Press (DSP) content: Psionics, Path of War and Akashic Mysteries.</li>
+  <li><strong>Precedence:</strong> this guide's <a href="index.html#rules">House Rules</a>, <a href="index.html#thirdparty">Third-Party Options</a> and <a href="index.html#rulings">GM Rulings</a> override published text. Anything not covered follows the published rules.</li>
+  <li><strong>Where to look up rules:</strong> <a href="https://metzo.miraheze.org/wiki/Library_of_Metzofitz">Library of Metzofitz</a> for DSP and the third-party options (append <code>?action=raw</code> to a page URL for wikitext); <a href="https://www.d20pfsrd.com/">d20pfsrd</a> for DSP psionics and Path of War (no Akashic); <a href="https://aonprd.com/">Archives of Nethys</a> for Paizo. Feats use this guide's <a href="feats.html">Feats page</a>, not the Core Rulebook.</li>
+  <li><strong>When something is unclear,</strong> don't guess: list it as an open question for the GM, quoting the rule text and linking its source. Keep those questions separate from the build itself.</li>
+  <li><strong>Show your math</strong> for hit points, BAB, saves, skill ranks and gold, using the house rules below.</li>
+</ul>
+
+<h2>Character creation</h2>
+<ul>
+  <li>Start at <strong>1st level</strong> (2nd soon after play begins). <strong>25-point buy.</strong></li>
+  <li><strong>1,000 gp</strong> starting wealth; no single item over 500 gp.</li>
+  <li><strong>Hit points:</strong> full Hit Die at 1st level, then the average per level after (d6 3.5, d8 4.5, d10 5.5, d12 6.5); keep halves within each class and round each class's total (half rounds up). No rolling.</li>
+  <li><strong>Fractional BAB and saves</strong> (Pathfinder Unchained): sum each class's fractions, round down; good saves get a one-time +2.</li>
+  <li><strong>Background skills</strong> (Unchained): +2 ranks per level for background skills only.</li>
+  <li><strong>Hero points</strong>, or <strong>Anti-Hero</strong>: no hero points, one bonus feat at 1st level.</li>
+  <li><strong>No mythic. No stamina rules.</strong></li>
+</ul>
+
+<h2>What's allowed</h2>
+<ul>
+  <li><strong>Races:</strong> Paizo core races plus the DSP races listed in the guide's <a href="index.html#races">Races</a> table. Nothing else.</li>
+  <li><strong>Classes:</strong> every DSP base class, with DSP archetypes. Akashic classes use the <strong>Akasha Retold</strong> versions (Daevic, Guru, Vizier, Rajah Retold), not the DSP originals. Paizo classes only in the forms in the guide's <a href="index.html#classes">Classes</a> table (cleric, plus specific DSP archetypes for a few others). <strong>No arcane spellcasting exists:</strong> no wizard, sorcerer, witch, arcanist and so on. The Snake Charmer (magus) and Resonant Song (bard) archetypes and DSP prestige classes aren't settled yet, so treat them as GM questions.</li>
+  <li><strong>Feats, traits, equipment, spells and powers:</strong> Paizo first-party or DSP, plus the third-party options named in the guide.</li>
+  <li><strong>Not allowed:</strong> Spheres of Power, Might or Guile; any other third-party content not named in the guide.</li>
+</ul>
+
+<h2>Mistakes to avoid</h2>
+<ul>
+  <li><strong>Feats are Elephant in the Room v3.0.</strong> Power Attack, Deadly Aim, Combat Expertise, Fighting Defensively and Weapon Finesse don't exist as feats: use the free <em>Risky Strike</em> and <em>Defensive Stance</em> options, and light/finesse weapons can use Dex to hit. Weapon Proficiency, Weapon Focus and other weapon feats apply to a <strong>fighter weapon group</strong>, not one weapon. <strong>Precise Shot</strong> has no prerequisite and opens the archery line; <strong>Point-Blank Shot requires Precise Shot</strong>. Improved Trip, Disarm and similar feats are merged into <em>Deft Maneuvers</em>, <em>Powerful Maneuvers</em> and <em>Unarmed Combatant</em>. Check every feat on the <a href="feats.html">Feats page</a>.</li>
+  <li><strong>Rajahs are Rajah Retold.</strong> The DSP rajah's Crossroads (Crown of the Sky Sovereign and the rest) and built-in maneuvers are gone; maneuvers come only from the Batal path. Check the allowed paths in <a href="index.html#thirdparty">Third-Party Options</a>.</li>
+  <li><strong>Third-party options have changes.</strong> Xeshim, Dancer of the Seven Veils, Malleo, Surging Shark and several titles have modified text in the guide. Use the guide's version.</li>
+  <li><strong>Psychic Armory soulknives</strong> don't get Wisdom to damage by default; see <a href="index.html#rulings">GM Rulings</a>.</li>
+  <li><strong>Retold pages</strong> on Metzofitz are named like "Daevic Retold" or "Batal (Retold)". The un-suffixed page is usually the DSP original.</li>
+</ul>
+
+<h2>Setting notes for flavor</h2>
+<p>Read the guide's <a href="index.html#pitch">The Silent Kingdom</a> through <a href="index.html#faith">Faith and the Gods</a> for background. In short: humans are rare, psionics is the most common supernatural power, the martial disciplines are cultural traditions, akasha (veilweaving) is tied to the invading elven empire, and divine magic is the only Vancian casting. There are no outer planes.</p>
+
+<footer>
+  Neyrith Player's Guide, draft. <a href="index.html">Guide</a> &middot; <a href="feats.html">Feats</a> &middot; <a href="changelog.html">Changelog</a> &middot; <a href="agents.html">For AI assistants</a>
+</footer>
+
+</div>
+</body>
+</html>
